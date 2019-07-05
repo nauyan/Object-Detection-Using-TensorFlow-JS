@@ -34,3 +34,12 @@ yarn train \
     --initialTransferEpochs 100 \
     --fineTuningEpochs 200
 ```
+
+## How to prepare dataset
+- Download the Pascal VOC data set from their [offical webiste](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar)
+- Once dataset is downloaded navigate to JPEGImages folder and resize all images with size of 224 x 224 and adjust all their annotations accordingly.
+- [Convert2Yolo](https://github.com/ssaru/convert2Yolo) and [resize_dataset_pascalvoc
+](https://github.com/italojs/resize_dataset_pascalvoc#Folder-structure-example) might help in accomplishing above mentioned task.
+
+Last before starting training make a directory named DataSet and inside this directory make two more directoreis namely JPEGImage and YOLO. JPEGImages would have resized Jpeg images from pascal voc dataset and YOLO directory would have all the annotations files.
+
